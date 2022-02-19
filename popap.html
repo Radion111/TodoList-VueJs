@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>popap</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  ,maximum-scale=1.0,user-scalable=0 (для полной адаптации сайта чтобы пользователь не мог менять значенния)-->
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <link rel="icon" href="img/mymaketlogo/mylogo.jpg" type="image/x-icon">
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
+   <!-- Потключения шрифтов -->
+
+
+
+<script defer src="main.b4152df3eb8bd47cf7c0.js"></script><link href="main.3e5737dbc6b26b5b80bd.css" rel="stylesheet"></head>
+
+<body>
+
+
+   <div class="wrapper">
+      <div class="container">
+         <main class="proverka-popup">
+            <div class="proverka-popup__amain">
+               <a href="#popup-avtorization" class="proverka-popup__silka">
+                  <i class="fa fa-user"></i>
+               </a>
+               <a href="#popup-korzina"><i class="fas fa-shopping-cart "></i>
+               </a>
+
+            </div>
+         </main>
+      </div>
+   </div>
+
+
+   <!-- ! my popup  avtorization   -->
+   <div class="popup-avtorization" id="popup-avtorization">
+      <a class="popup-avtorization__area"></a>
+      <div class="popup-avtorization__body">
+         <div class="popup-avtorization__content">
+            <div class="popup-avtorization__header">
+               <h3 class="popup-avtorization__h3">Вход</h3>
+               <a class="popup-avtorization__close">
+                  ×
+               </a>
+            </div>
+            <div class="popup-avtorization__brfull"></div>
+            <div class="popup-avtorization__row">
+               <div class="popup-avtorization__colums">
+                  <form action="#" method="POSt">
+                     <label class="popup-avtorization__label">
+                        Эл почта или телефон
+                     </label>
+                     <input type="email" class="popup-avtorization__input">
+                     <label class="popup-avtorization__label">
+                        Пароль
+                     </label>
+                     <input type="password" class="popup-avtorization__input" autocomplete="123">
+                     <div class="popup-avtorization__mininrow">
+                        <div class="popup-avtorization__minicol">
+                           <input type="checkbox" class="popup-avtorization__checkbox">
+                           <label class="popup-avtorization__label label-text">
+                              Запомнить меня
+                           </label>
+                        </div>
+                        <div class="popup-avtorization__minicol">
+                           <a href="#popup-changepassword" class="popup-avtorization__remember">Напомнить пароль</ф>
+
+                        </div>
+                     </div>
+                     <button class="popup-avtorization__button" type="submit"> Войти</button>
+                     <a href="#popup-registration" class="popup-avtorization__registration">Зарегестририваться</a>
+                  </form>
+               </div>
+               <div class="popup-avtorization__colums">
+                  <div class="popup-avtorization__brmin"></div>
+                  <div class="popup-avtorization__brtext">или</div>
+                  <div class="popup-avtorization__brmin"></div>
+               </div>
+               <div class="popup-avtorization__colums">
+                  <div class="popup-avtorization__zag">
+                     Войти как пользователь
+                  </div>
+                  <a href="#" class="popup-avtorization__facebook">
+                     <i class="fab fa-facebook-f"></i>
+                     <span> Facebook</span>
+                  </a>
+                  <a href="#" class="popup-avtorization__google">
+                     <i class="fab fa-google"></i>
+                     <span> Google</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="popup-avtorization" id="popup-registration">
+      <a class="popup-avtorization__area"></a>
+      <div class="popup-avtorization__body">
+         <div class="popup-avtorization__content content-registration">
+            <div class="popup-avtorization__header">
+               <h3 class="popup-avtorization__h3">Регистрация</h3>
+               <a class="popup-avtorization__close">
+                  ×
+               </a>
+            </div>
+            <div class="popup-avtorization__brfull"></div>
+            <div class="popup-avtorization__row">
+               <div class="popup-avtorization__colums">
+                  <form action="#" method="get">
+                     <label class="popup-avtorization__label" for="formName">
+                        Имя
+                     </label>
+                     <input type="text" class="popup-avtorization__input popup-name" id="formName">
+                     <div class="content-registration__infoname clasification">Введите свое имя на кириллице</div>
+
+                     <label class="popup-avtorization__label" for="formSurname">
+                        Фамилия
+                     </label>
+                     <input type="text" class="popup-avtorization__input popup-surname" id="formSurname">
+                     <div class="content-registration__infosurname clasification">Введите свою фамилию на
+                        кириллице(должно быть больше 4 букв)
+                     </div>
+
+                     <label class="popup-avtorization__label">
+                        Номер телефона
+                     </label>
+
+                     <input type="tel" class="popup-avtorization__input popup-telephone" minlength="13" maxlength="13"
+                        value="+380">
+                     <div class="content-registration__infonumberr clasification">Введите свой номер телефона </div>
+                     <div class="content-registration__infonumberr clasification">Строка должна содержать только
+                        цифри
+                     </div>
+
+                     <label class="popup-avtorization__label">
+                        Эл почта
+                     </label>
+                     <input type="email" class="popup-avtorization__input popup-email">
+                     <div class="content-registration__infonumberemail clasification">Введите корекную электроную
+                        почту
+                     </div>
+                     <label class="popup-avtorization__label">
+                        Придумайте Пароль
+                     </label>
+                     <div class="popup-avtorization__item">
+                        <input type="password" class="popup-avtorization__input popup-pasword" autocomplete="123">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                     </div>
+                     <div class="content-registration__infonumberemail clasification">Ваш пароль очень легкий
+                     </div>
+                     <label class="popup-avtorization__text">
+                        <p>
+                           Пароль должен быть не менее 6 символов, содержать
+                           цифры и латинские буквы, в том числе
+                           заглавные, и не должен совпадать с именем и эл. почтой
+                        </p>
+                        Регистрируясь, вы соглашаетесь с
+                        <a href="#" class="popup-avtorization__avtor">
+                           пользовательским соглашением
+                        </a>
+                     </label>
+                     <button class="popup-avtorization__button" id="pop-regist" type="submit">
+                        Зарегестририваться</button>
+                     <a href="#popup-avtorization" class="popup-avtorization__registration">Я уже Зарегестрирован</a>
+                  </form>
+               </div>
+               <div class="popup-avtorization__colums">
+                  <div class="popup-avtorization__brmin"></div>
+                  <div class="popup-avtorization__brtext">или</div>
+                  <div class="popup-avtorization__brmin"></div>
+               </div>
+               <div class="popup-avtorization__colums">
+                  <div class="popup-avtorization__zag">
+                     Войти как пользователь
+                  </div>
+                  <a href="#" class="popup-avtorization__facebook">
+                     <i class="fab fa-facebook-f"></i>
+                     <span>Facebook</span>
+                  </a>
+                  <a href="#" class="popup-avtorization__google">
+                     <i class="fab fa-google"></i>
+                     <span>Google</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ? my popup registration end -->
+
+   <!-- !popup password again -->
+
+   <div class="popup-avtorization" id="popup-changepassword">
+      <a href="#" class="popup-avtorization__area"></a>
+      <div class="popup-avtorization__body">
+         <div class="popup-avtorization__content content-passwordcheck">
+            <div class="popup-avtorization__header">
+               <h3 class="popup-avtorization__h3">Вход</h3>
+               <a class="popup-avtorization__close" href="#">
+                  ☓
+               </a>
+            </div>
+            <div class="popup-avtorization__brfull"></div>
+            <div class="popup-avtorization__row">
+               <div class="popup-avtorization__colums">
+                  <form action="#" method="POSt">
+                     <label class="popup-avtorization__label">
+                        Эл почта
+                     </label>
+                     <input type="email" class="popup-avtorization__input">
+                     <button class="popup-avtorization__button" type="submit"> Получить времений пароль</button>
+                     <a href="#popup-avtorization" class="popup-avtorization__registration">Я уже вспомнил пароль</a>
+                  </form>
+               </div>
+               <div class="popup-avtorization__colums">
+                  <div class="popup-avtorization__brmin"></div>
+                  <div class="popup-avtorization__brtext">или</div>
+               </div>
+               <div class="popup-avtorization__colums">
+                  <div class="popup-avtorization__zag">
+                     Войти как пользователь
+                  </div>
+                  <a href="#" class="popup-avtorization__facebook">
+                     Facebook
+                  </a>
+                  <a href="#" class="popup-avtorization__google">
+                     Google
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ?my popup passwrod again end -->
+   <!-- ! popup basket -->
+
+   <div id="popup-korzina" class="popup-korzina">
+      <a href="#" class="popup-korzina__area"> ☓ </a>
+      <div class="popup-korzina__body">
+         <div class="popup-korzina__content">
+            <div class="popup-korzina__header">
+               <h3 class="popup-korzina__h3">Корзина</h3>
+               <a href="#" class="popup-korzina__close">☓</a>
+            </div>
+            <div class="popup-korzina__brmin"></div>
+
+            <div class="popup-korzina__main">
+               <div class="popup-korzina__some">
+
+                  <div class="some-change__h3">Корзина пуста</div>
+                  <div class="some-change__text"> Но это не когда не поздно изменить :)</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- ? popup basket end -->
+
+
+
+   <div class="popup-avtorization" id="feedback">
+      <a class="popup-avtorization__area"></a>
+      <div class="popup-avtorization__body">
+         <div class="popup-avtorization__feedback-content">
+            <div class="popup-avtorization__feedback-header">
+               <h3 class="popup-avtorization__h3">Обратная связь</h3>
+               <a class="popup-avtorization__close">
+                  ×
+               </a>
+            </div>
+            <form class="popup-avtorization__feedback-form" action="#" method="get">
+               <input type="text" class="popup-avtorization__feedback-input popupfeedback-name"
+                  placeholder="Введите свое имя" name="name">
+               <div class="content-registration__infoname clasification">Введите свое имя на кириллице</div>
+               <input type="tel" class="popup-avtorization__feedback-input popupfeedback-telephone" minlength="10"
+                  maxlength="10" name="telephone" placeholder="Введите свой номер телефона">
+               <div class="content-registration__infonumberr clasification">Введите свой номер телефона </div>
+               <button class="popup-avtorization__feedback-button" id="callback" type="submit">
+                  Отправить
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!--!Для второго попапа  callback -->
+   <div class="popup-avtorization" id="feedback2">
+      <a class="popup-avtorization__area"></a>
+      <div class="popup-avtorization__body">
+         <div class="popup-avtorization__feedback-content-second">
+            <div class="popup-avtorization__feedback-header">
+               <h3 class="popup-avtorization__h3">Ваша заявка прийнята</h3>
+               <a class="popup-avtorization__close">
+                  ×
+               </a>
+            </div>
+            <div class="popup-avtorization__textmain">
+               Мы связжемся с вами в ближайшее время
+            </div>
+         </div>
+      </div>
+   </div>
+
+   
+
+</body>
+
+
+</html>

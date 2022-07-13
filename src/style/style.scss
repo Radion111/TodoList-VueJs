@@ -1,0 +1,164 @@
+@import "zeroing.scss";
+@import "popap.scss";
+@import "timer.scss";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+
+   @font-face {
+      font-family: $font_name;
+      font-display: swap;
+      src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+      font-weight: #{$weight};
+      font-style: #{$style};
+   }
+}
+
+// ! Исправить шрифты
+@import "fonts.css";
+// Проверка 
+
+
+.proverka {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 30px;
+
+   &__link {
+      margin-right: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: green;
+      color: white;
+
+      &.active {
+         color: black;
+         background-color: yellow;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin font($font_name, $file_name, $weight, $style) {
+
+   @font-face {
+      font-family: $font_name;
+      font-display: swap;
+      src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+      font-weight: #{$weight};
+      font-style: #{$style};
+   }
+}
+
+// миксин для  адаптивного текста
+
+$maxWidth: 1280;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+   $addSize: $pcSize - $mobSize;
+   $maxWidth: $maxWidth - 320;
+   font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+//</МИКСИНЫ>===============================================================================================
+
+//  <Google Fonts Подключения шрифтов Удавлено>
+// Для кирилици использутся запись
+//  &display=swap&subset=cyrillic-ext
+// также запись &display=swap увеличивает скорость google speed
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:,300italic,regular,italic,700");
+
+// </ Google Fonts Подключения шрифтов Удавлено>
+
+
+
+
+body {
+   height: 100%;
+   font-family: "Roboto", sans-serif;
+
+}
+
+
+// для потключения @include adaptiv-font(40, 18)
+
+
+
+
+.wrapper {
+   height: 100%;
+   max-width: 1920px;
+   margin: 0 auto;
+   // ! Если хочешь использовать респонсив адаптивность использует эти свойства
+   // display: flex;
+   // flex-direction: column;
+   // min-height: 100vh;
+}
+
+.container {
+   max-width: 1250px;
+   padding: 0px 15px;
+   //! Увеличиваем контейнер на 30 px И убираем эти 30 px c помощью paddinga 0px 15px;
+   margin: 0 auto;
+
+
+}
+
+.title {
+   font-size: 50px;
+   font-weight: bold;
+   line-height: normal;
+   color: black;
+   // ! Для главных заголовкав 
+}
+
+.header {
+
+   width: 100%;
+   //! Для тега <header> или <footer> лутше не задавать свойство heihgt 100% то могут быть ошибки
+}
+
+.logo {
+
+   background-image: url("../assets/img/first1.jpg");
+
+   height: 200px;
+   width: 200px;
+
+}
+
+.header {
+
+   &__ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__li {
+      margin-right: 30px;
+   }
+}
+
+
+
+
+
+// Потключения метода ibg
+@import "ibg.scss";

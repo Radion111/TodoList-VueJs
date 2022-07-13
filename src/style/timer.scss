@@ -1,0 +1,100 @@
+.timer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+   text-align: center;
+
+   &__hour {
+      margin-right: 20px;
+      color: white;
+      font-size: 20px;
+      background-color: black;
+      padding: 10px;
+   }
+
+   &__minutes {
+      margin-right: 20px;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      padding: 10px;
+   }
+
+   &__second {
+      margin-right: 20px;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      padding: 10px;
+   }
+
+   &__minisecond {
+
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      padding: 10px;
+   }
+}
+
+
+.timer {
+   &__obolochka {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__main-text {
+      display: block;
+      text-align: center;
+      width: 200px;
+      line-height: normal;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      padding: 15px;
+      margin-top: 15px;
+      font-weight: 500;
+   }
+
+   &__day-data {
+      color: white;
+      padding: 15px;
+      background-color: black;
+      margin-right: 15px;
+      font-weight: 500;
+      font-size: 20px;
+   }
+
+   &__hour-data {
+      font-size: 20px;
+      color: white;
+      padding: 15px;
+      background-color: black;
+      margin-right: 15px;
+      font-weight: 500;
+   }
+
+   &__minutes-data {
+      font-size: 20px;
+      padding: 15px;
+      color: white;
+      background-color: black;
+      margin-right: 15px;
+      font-weight: 500;
+   }
+
+   &__second-data {
+      font-size: 20px;
+      color: white;
+      padding: 15px;
+      background-color: black;
+      margin-right: 15px;
+      font-weight: 500;
+   }
+
+
+
+}

@@ -1,0 +1,7 @@
+/*? Так тут размещаем все шрифты для работы с html */
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+  format: ("truetype");
+}

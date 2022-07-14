@@ -21,6 +21,10 @@ const isDev = process.env.NODE_ENV === "development";
 module.exports = {
   mode: "development",
 
+  //! Обязательно указать правильний путь до репозитория
+  publicPath: process.env.NODE_ENV === "production" ? "/TodoList-VueJs/" : "/",
+  
+  // https://radion111.github.io
   // context для того чтобы понял в какой папи мы работаем
   // mode режим разработчика
   entry: {
